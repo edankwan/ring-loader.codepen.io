@@ -1,0 +1,145 @@
+html, body{
+    background-color: #000;
+}
+
+#app{
+    background-color: #000;
+}
+#info{
+    background-color: #1d3f3d;
+}
+
+#control {
+    position: absolute;
+    width: 180px;
+    top: 20px;
+    right: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    overflow: hidden;
+}
+
+#base {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.front {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.a-0,
+.a-45 {
+    left: 50px;
+    bottom: 50px;
+}
+.a-90,
+.a-135 {
+    left: 50px;
+    top: 50px;
+}
+.a-180,
+.a-225 {
+    top: 50px;
+    right: 50px;
+}
+.a-270,
+.a-315 {
+    bottom: 50px;
+    right: 50px;
+}
+
+.a-0 {
+    border-top: 50px solid #00fff6;
+    border-right: 0 solid transparent;
+}
+.a-45 {
+    left: 50%;
+    border-bottom: 51px solid #222;
+    border-left: 50px solid transparent;
+}
+.a-90 {
+    border-right: 50px solid #00fff6;
+    border-bottom: 0px solid transparent;
+}
+.a-135 {
+    border-left: 51px solid #222;
+    border-top: 50px solid transparent;
+}
+.a-180 {
+    border-bottom: 50px solid #00fff6;
+    border-left: 0px solid transparent;
+}
+.a-225 {
+    border-top: 51px solid #222;
+    border-right: 50px solid transparent;
+}
+.a-270 {
+    border-left: 50px solid #00fff6;
+    border-top: 0px solid transparent;
+}
+.a-315 {
+    border-right: 51px solid #222;
+    border-bottom: 50px solid transparent;
+}
+
+#base .a-45 {
+    border-bottom-color: #00fff6;
+    border-bottom-width: 50px;
+}
+#base .a-135 {
+    border-left-color: #00fff6;
+    border-left-width: 50px;
+}
+#base .a-225 {
+    border-top-color: #00fff6;
+    border-top-width: 50px;
+}
+#base .a-315 {
+    border-right-color: #00fff6;
+    border-right-width: 50px;
+}
+
+#mask{
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 102px;
+    height: 102px;
+    background-image: url(../img/mask.png);
+}
+#percent {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    color: #00fff6;
+}
